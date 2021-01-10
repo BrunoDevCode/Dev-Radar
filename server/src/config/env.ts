@@ -4,5 +4,5 @@ dotenv.config();
 dotenv.config({ path: '../../.env' });
 
 export const {
-  PORT
+  PORT, MONGO_URI
 }: any = process.env;
