@@ -1,10 +1,10 @@
 import express from 'express';
-import { PORT, MONGO_URI } from './config/env';
 import morgan from 'morgan';
-import {connect} from 'mongoose';
+import { connect } from 'mongoose';
 import { resolve } from 'path';
 import cors from 'cors';
-import routes from 'routes';
+import { PORT, MONGO_URI } from './config/env';
+import routes from './routes';
 
 const app = express();
 
